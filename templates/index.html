@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Birds Awareness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</head>
+
+<body>
+  <h1 class="welcome">Welcome!</h1>
+  <div class="note">View important information about the bird and help us protect them!</div>
+  <form class="input-form" action="{{url_for('after')}}" method="POST" enctype="multipart/form-data">
+    <!-- <input type="file" name="file_input">
+    <input type="submit" name="btn"> -->
+    
+    <div class="form-group files color">
+        <label>Add your bird image here (Format JPG/JPEG/PNG)</label>
+        <input type="file" name="file_input" class="form-control" multiple="">
+    </div>
+    <input type="submit" name="btn">
+  </form>
+
+</body>
+</html>
