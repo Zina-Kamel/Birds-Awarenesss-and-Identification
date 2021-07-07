@@ -32,7 +32,7 @@ def after():
     url = wiki_urls[answer[0]]
     description, kingdom, phylum, conservation_status, image_full_url = parse(url)
 
-    # urllib.request.urlretrieve('image_full_url', 'static/bird_img.jpg')
+    # urllib.request.urlretrieve( 'image_full_url', 'static/bird_img.jpg')
 
     return render_template('after.html', name = name, url = url, desc = description, kingdom = kingdom, phylum = phylum,  conservation_status= conservation_status, image_full_url = image_full_url)
  
