@@ -8,6 +8,7 @@ from predict import *
 from labels import *
 from scraping import *
 import urllib
+from wiki_urls import *
 
 app = Flask(__name__)
 
@@ -29,12 +30,12 @@ def after():
     model_output = run_inference(model, image, input_details, output_details)
     answer=np.argmax(model_output, axis=-1)
     name = labels[answer[0]]
-    url = wiki_urls[answer[0]]
-    description, kingdom, phylum, conservation_status, image_full_url = parse(url)
+    url = all_urls[answer[0]]
+    description, info = parse(url)
 
     # urllib.request.urlretrieve('image_full_url', 'static/bird_img.jpg')
 
-    return render_template('after.html', name = name, url = url, desc = description, kingdom = kingdom, phylum = phylum,  conservation_status= conservation_status, image_full_url = image_full_url)
+    return render_template('after.html', name = name, len = len(info), info = info, desc = description)
  
 
 if __name__ == "__main__":

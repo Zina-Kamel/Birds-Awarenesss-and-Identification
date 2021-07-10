@@ -17,17 +17,12 @@
             <span>Name: </span> <span>{{name}}</span>
         </div>
 
-        <div class="center species">
-            <span>Kingdom: </span> <span>{{kingdom}}</span>
-        </div>
-
-        <div class="center species">
-            <span>Phylum: </span> <span>{{phylum}}</span>
-        </div>
-
-        <!-- <div class="center species">
-            <span>Species: </span> <span>{{species}}</span>
-        </div> -->
+        <ul>
+            {%for i in range(0, len)%}
+    
+                <li>{{info[i]}}</li>
+            {%endfor%}
+        </ul>
 
         <div class="center species">{{desc}}</div>
 
