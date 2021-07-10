@@ -33,7 +33,7 @@ def after():
     url = all_urls[answer[0]]
     description, info = parse(url)
 
-    # urllib.request.urlretrieve('image_full_url', 'static/bird_img.jpg')
+    # urllib.request.urlretrieve( 'image_full_url', 'static/bird_img.jpg')
 
     return render_template('after.html', name = name, len = len(info), info = info, desc = description)
  
