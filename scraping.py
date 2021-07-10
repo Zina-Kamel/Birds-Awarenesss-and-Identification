@@ -30,8 +30,3 @@ def parse(url):
         info.append(row.get_text().replace('\n', ' ').strip())
 
     return description, info
-
-for url in all_urls:
-    print(url)
-    parse(url)
-    print('done')
