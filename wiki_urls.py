@@ -6,4 +6,4 @@ all_urls = ['https://en.wikipedia.org/wiki/african_crowned_crane', 'https://en.w
 'https://en.wikipedia.org/wiki/White-necked_raven', 'https://en.wikipedia.org/wiki/White-tailed_tropicbird', 'https://en.wikipedia.org/wiki/White-throated_bee-eater', 'https://en.wikipedia.org/wiki/wild_turkey', 'https://en.wikipedia.org/wiki/Wilson%27s_bird-of-paradise', 
 'https://en.wikipedia.org/wiki/wood_duck', 'https://en.wikipedia.org/wiki/Yellow-bellied_flowerpecker', 'https://en.wikipedia.org/wiki/Yellow-rumped_cacique', 'https://en.wikipedia.org/wiki/Yellow-headed_blackbird']
 
-#print(all_urls.index('https://en.wikipedia.org/wiki/Peafowl'))
+
